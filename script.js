@@ -1,7 +1,7 @@
 const SHELF_INDEX = 4
 const ARTICLE_INDEX = 0
 const DESCRIPTION1_INDEX = 1
-const DESCRIPTION2_INDX = 2
+const DESCRIPTION2_INDEX = 2
 
 var articleTable = document.getElementById('articleTable')
 var resetButton = document.getElementById('resetButton')
