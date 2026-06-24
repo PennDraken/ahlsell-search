@@ -1,33 +1,40 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
 <h1>Ahlsell Sökfunktion</h1>
 <p>
 Via Vivaldia, exportera .csv fil med artikel - hyllplats data.<br>
 Släpp .csv filen här...
 </p>
 
-<section id="files" class="files">
-  <h2>Tabell:</h2>
-  <button id="resetButton">Rensa alla fält</button><br><br>
-  <b>Sök</b><br>
-  <input id="universalSearchInput"></input>
-  <table>
-    <thead>
-      <th scope="col">Hylla</th>
-      <th scope="col">Artnr</th>
-      <th scope="col">Beskrivning 1</th>
-      <th scope="col">Beskrivning 2</th>
-    </thead>
-    <tbody>
-      <td>
-        <input id="shelfInput"></input>
-      </td>
-      <td>
-        <input id="articleInput"></input>
-      </td>
-      <td colspan="2">
-        <input id="descriptionInput" ></input>
-      </td>
-    </tbody>
-    <tbody id="articleTable">
-    </tbody>
-  </table>
-</section>
+<body>
+    <section id="files" class="files">
+    <h2>Tabell:</h2>
+    <button id="resetButton">Rensa alla fält</button><br><br>
+    <b>Sök</b><br>
+    <input id="universalSearchInput"></input>
+    <table>
+        <thead>
+        <th scope="col">Hylla</th>
+        <th scope="col">Artnr</th>
+        <th scope="col">Beskrivning 1</th>
+        <th scope="col">Beskrivning 2</th>
+        </thead>
+        <tbody>
+        <td>
+            <input id="shelfInput"></input>
+        </td>
+        <td>
+            <input id="articleInput"></input>
+        </td>
+        <td colspan="2">
+            <input id="descriptionInput" ></input>
+        </td>
+        </tbody>
+        <tbody id="articleTable">
+        </tbody>
+    </table>
+    </section>
+    <script src="scripts.js"></script>
+</body>
