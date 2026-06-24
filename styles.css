@@ -23,3 +23,9 @@ pre {
   border-radius: 0.3rem;
   max-height: 15rem;
 }
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 28px;
+}
