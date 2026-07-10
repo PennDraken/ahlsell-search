@@ -18,7 +18,7 @@ articleInput.addEventListener('input', updateArticlesView)
 var descriptionInput = document.getElementById('descriptionInput')
 descriptionInput.addEventListener('input', updateArticlesView)
 
-var rawRows = []
+var rawRows = almedalData
 
 /* Reads files as text, can be extended to handle other types */
 function readFile(file) {
