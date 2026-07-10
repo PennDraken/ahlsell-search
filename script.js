@@ -167,11 +167,15 @@ function exportData() {
   var textOutput = "["
   for (let i = 0; i < rawRows.length; i++) {
     textOutput += '["' + rawRows[i][0] + '"'
-    // -1 as last elem in newline
+    // length - 1 as last elem is newline
     for (let j = 1; j < rawRows[i].length - 1; j++) {
       textOutput += ', "' + rawRows[i][j] + '"'
     }
-    textOutput += "],\n"
+    if (i < rawRows.length) {
+      textOutput += "],\n"
+    } else {
+      textOutput += "]"
+    }
   }
   textOutput += "]"
   navigator.clipboard.writeText(textOutput)
