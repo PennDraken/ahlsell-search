@@ -167,7 +167,7 @@ function exportData() {
   var textOutput = ""
   for (let i = 0; i < rawRows.length; i++) {
     textOutput += '["' + rawRows[i][0] + '"'
-    for (let j = 1; j < rawRows.length; i++) {
+    for (let j = 1; j < rawRows[i].length; j++) {
       textOutput += ', "' + rawRows[i][j] + '"'
     }
     textOutput += "]\n"
