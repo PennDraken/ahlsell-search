@@ -166,7 +166,11 @@ function clearInputs() {
 function exportData() {
   var textOutput = ""
   for (let i = 0; i < rawRows.length; i++) {
-    textOutput += "[" + rawRows[i].toString() + "],\n"
+    textOutput += '["' + rawRows[i][j] + '"'
+    for (let j = 1; j < rawRows.length; i++) {
+      textOutput += ', "' + rawRows[i][j] + '"'
+    }
+    textOutput += "]\n"
   }
 
   navigator.clipboard.writeText(textOutput)
