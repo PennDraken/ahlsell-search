@@ -19,6 +19,7 @@ var descriptionInput = document.getElementById('descriptionInput')
 descriptionInput.addEventListener('input', updateArticlesView)
 
 var rawRows = almedalData
+populateTable(rawRows)
 
 /* Reads files as text, can be extended to handle other types */
 function readFile(file) {
