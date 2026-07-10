@@ -169,7 +169,8 @@ function exportData() {
     textOutput += '["' + rawRows[i][0] + '"'
     // length - 1 as last elem is newline
     for (let j = 1; j < rawRows[i].length - 1; j++) {
-      textOutput += ', "' + rawRows[i][j] + '"'
+      // need to escape to get correct formatting
+      textOutput += ', "' + rawRows[i][j].replaceAll('"', '\\"') + '"'
     }
     if (i < rawRows.length) {
       textOutput += "],\n"
