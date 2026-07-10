@@ -6,6 +6,8 @@ const DESCRIPTION2_INDEX = 2
 var articleTable = document.getElementById('articleTable')
 var resetButton = document.getElementById('resetButton')
 resetButton.addEventListener('click', clearInputs)
+var copyButton = document.getElementById('copyButton')
+copyButton.addEventListener('click', exportData)
 
 var universalSearchInput = document.getElementById('universalSearchInput')
 universalSearchInput.addEventListener('input', updateArticlesView)
@@ -159,4 +161,13 @@ function clearInputs() {
   document.getElementById("articleInput").value = "";
   document.getElementById("descriptionInput").value = "";
   updateArticlesView()
+}
+
+function exportData() {
+  var textOutput = ""
+  for (let i = 0; i < rawRows.length; i++) {
+    textOutput += "[" + rawRows[i].toString() + "],\n"
+  }
+
+  navigator.clipboard.writeText(textOutput)
 }
