@@ -164,14 +164,15 @@ function clearInputs() {
 }
 
 function exportData() {
-  var textOutput = ""
+  var textOutput = "["
   for (let i = 0; i < rawRows.length; i++) {
     textOutput += '["' + rawRows[i][0] + '"'
-    for (let j = 1; j < rawRows[i].length; j++) {
+    // -1 as last elem in newline
+    for (let j = 1; j < rawRows[i].length - 1; j++) {
       textOutput += ', "' + rawRows[i][j] + '"'
     }
-    textOutput += "]\n"
+    textOutput += "],\n"
   }
-
+  textOutput += "]"
   navigator.clipboard.writeText(textOutput)
 }
