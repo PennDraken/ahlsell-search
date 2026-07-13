@@ -85,6 +85,9 @@ function populateTable(rows) {
     var img = document.createElement('img')
     img.src = "new-tab-icon.svg"
     img.classList.add("icon")
+    img.onclick = function() {
+      window.location.href = 'https://www.ahlsell.se/products/' + row[0];
+    };
     tableRow.appendChild(img)
     articleTable.appendChild(tableRow)
   }

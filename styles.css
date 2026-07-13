@@ -38,4 +38,5 @@ tr:nth-child(even) {
 .icon {
   width: 32px;
   height: 32px;
+  cursor: pointer;
 }
