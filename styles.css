@@ -34,3 +34,8 @@ input {
 tr:nth-child(even) {
   background-color: #f7f7f7;
 }
+
+icon {
+  width: 32;
+  height: 32;
+}

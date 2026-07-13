@@ -84,6 +84,7 @@ function populateTable(rows) {
     // New tab image link
     var img = document.createElement('img')
     img.src = "new-tab-icon.svg"
+    img.class = "icon"
     tableRow.appendChild(img)
     articleTable.appendChild(tableRow)
   }
