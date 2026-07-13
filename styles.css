@@ -30,3 +30,7 @@ input {
   box-sizing: border-box;
   height: 28px;
 }
+
+tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
