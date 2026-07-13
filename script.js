@@ -82,13 +82,15 @@ function populateTable(rows) {
     tableRow.appendChild(desc1Cell)
     tableRow.appendChild(desc2Cell)
     // New tab image link
-    var img = document.createElement('img')
-    img.src = "new-tab-icon.svg"
-    img.classList.add("icon")
-    img.onclick = function() {
-      window.location.href = 'https://www.ahlsell.se/products/' + row[0];
-    };
-    tableRow.appendChild(img)
+    var link = document.createElement('a');
+    link.href = 'https://www.ahlsell.se/products/' + row[0];
+    link.target = '_blank'; // Opens the link in a new tab
+    var img = document.createElement('img');
+    img.src = "new-tab-icon.svg";
+    img.classList.add("icon");
+    link.appendChild(img);
+    tableRow.appendChild(link);
+    
     articleTable.appendChild(tableRow)
   }
   console.log(articleTable)
