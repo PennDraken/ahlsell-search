@@ -81,6 +81,10 @@ function populateTable(rows) {
     tableRow.appendChild(articleCell)
     tableRow.appendChild(desc1Cell)
     tableRow.appendChild(desc2Cell)
+    // New tab image link
+    var img = document.createElement('img')
+    img.src = "new-tab-icon.svg"
+    tableRow.appendChild(img)
     articleTable.appendChild(tableRow)
   }
   console.log(articleTable)
