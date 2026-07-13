@@ -35,7 +35,7 @@ tr:nth-child(even) {
   background-color: #f7f7f7;
 }
 
-icon {
+.icon {
   width: 32px;
   height: 32px;
 }
